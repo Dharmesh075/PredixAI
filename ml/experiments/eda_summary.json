@@ -1,0 +1,187 @@
+{
+  "FD001": {
+    "dataset": "FD001",
+    "description": "Sea Level (Single Condition) | Fault: HPC Degradation",
+    "train_engines": 100,
+    "test_engines": 100,
+    "train_records": 20631,
+    "test_records": 13096,
+    "lifetime_min": 128,
+    "lifetime_max": 362,
+    "lifetime_mean": 206.3,
+    "operating_modes_detected": 3,
+    "constant_sensors": [
+      "s1",
+      "s5",
+      "s10",
+      "s16",
+      "s18",
+      "s19"
+    ],
+    "active_sensors_count": 15,
+    "top_degradation_sensors": [
+      [
+        "s11",
+        0.6344
+      ],
+      [
+        "s4",
+        0.6246
+      ],
+      [
+        "s12",
+        -0.6114
+      ],
+      [
+        "s7",
+        -0.5959
+      ],
+      [
+        "s15",
+        0.5887
+      ],
+      [
+        "s21",
+        -0.5859
+      ]
+    ],
+    "test_truth_mean_rul": 75.5,
+    "test_truth_min_rul": 7,
+    "test_truth_max_rul": 145
+  },
+  "FD002": {
+    "dataset": "FD002",
+    "description": "Six Operating Conditions | Fault: HPC Degradation",
+    "train_engines": 260,
+    "test_engines": 259,
+    "train_records": 53759,
+    "test_records": 33991,
+    "lifetime_min": 128,
+    "lifetime_max": 378,
+    "lifetime_mean": 206.8,
+    "operating_modes_detected": 11,
+    "constant_sensors": [],
+    "active_sensors_count": 21,
+    "top_degradation_sensors": [
+      [
+        "s14",
+        0.0716
+      ],
+      [
+        "s16",
+        0.0679
+      ],
+      [
+        "s11",
+        0.0422
+      ],
+      [
+        "s4",
+        0.0371
+      ],
+      [
+        "s15",
+        0.0351
+      ],
+      [
+        "s17",
+        0.0251
+      ]
+    ],
+    "test_truth_mean_rul": 81.2,
+    "test_truth_min_rul": 6,
+    "test_truth_max_rul": 194
+  },
+  "FD003": {
+    "dataset": "FD003",
+    "description": "Sea Level (Single Condition) | Fault: HPC & Fan Degradation",
+    "train_engines": 100,
+    "test_engines": 100,
+    "train_records": 24720,
+    "test_records": 16596,
+    "lifetime_min": 145,
+    "lifetime_max": 525,
+    "lifetime_mean": 247.2,
+    "operating_modes_detected": 3,
+    "constant_sensors": [
+      "s1",
+      "s5",
+      "s16",
+      "s18",
+      "s19"
+    ],
+    "active_sensors_count": 16,
+    "top_degradation_sensors": [
+      [
+        "s12",
+        0.5382
+      ],
+      [
+        "s7",
+        0.531
+      ],
+      [
+        "s10",
+        0.5282
+      ],
+      [
+        "s9",
+        0.5078
+      ],
+      [
+        "s14",
+        0.4886
+      ],
+      [
+        "s8",
+        0.4381
+      ]
+    ],
+    "test_truth_mean_rul": 75.3,
+    "test_truth_min_rul": 6,
+    "test_truth_max_rul": 145
+  },
+  "FD004": {
+    "dataset": "FD004",
+    "description": "Six Operating Conditions | Fault: HPC & Fan Degradation",
+    "train_engines": 249,
+    "test_engines": 248,
+    "train_records": 61249,
+    "test_records": 41214,
+    "lifetime_min": 128,
+    "lifetime_max": 543,
+    "lifetime_mean": 246.0,
+    "operating_modes_detected": 11,
+    "constant_sensors": [],
+    "active_sensors_count": 21,
+    "top_degradation_sensors": [
+      [
+        "s14",
+        0.0979
+      ],
+      [
+        "s16",
+        0.0444
+      ],
+      [
+        "s11",
+        0.0369
+      ],
+      [
+        "s4",
+        0.0293
+      ],
+      [
+        "s9",
+        0.0285
+      ],
+      [
+        "s15",
+        -0.0278
+      ]
+    ],
+    "test_truth_mean_rul": 86.6,
+    "test_truth_min_rul": 6,
+    "test_truth_max_rul": 195
+  }
+}

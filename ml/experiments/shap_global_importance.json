@@ -1,0 +1,46 @@
+{
+  "explainer_type": "TreeExplainer",
+  "base_value": -5.352143222928709,
+  "top_global_features": [
+    {
+      "feature": "s11_lag_diff_3",
+      "mean_abs_shap": 0.6306855713955491
+    },
+    {
+      "feature": "s12_lag_diff_3",
+      "mean_abs_shap": 0.43625372113640765
+    },
+    {
+      "feature": "s3",
+      "mean_abs_shap": 0.41218064453600667
+    },
+    {
+      "feature": "s4_lag_diff_3",
+      "mean_abs_shap": 0.27796080834720094
+    },
+    {
+      "feature": "s17",
+      "mean_abs_shap": 0.2747251153698288
+    },
+    {
+      "feature": "s11_roll_std_5",
+      "mean_abs_shap": 0.25334475069999624
+    },
+    {
+      "feature": "s21",
+      "mean_abs_shap": 0.20762163396935754
+    },
+    {
+      "feature": "s7_lag_diff_3",
+      "mean_abs_shap": 0.17459010533652716
+    },
+    {
+      "feature": "s12_roll_std_5",
+      "mean_abs_shap": 0.1611945639383742
+    },
+    {
+      "feature": "s2",
+      "mean_abs_shap": 0.1526054361598793
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "model_type": "Autoencoder + Isolation Forest",
+  "healthy_recon_median": 0.2316794991493225,
+  "healthy_recon_p95": 3.2406868934631348,
+  "feature_count": 69,
+  "iso_decision_min": -0.10773825795148939,
+  "iso_decision_max": 0.18316592837121398
+}

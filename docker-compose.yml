@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Persistent Storage
+  postgres:
+    image: postgres:16-alpine
+    container_name: predixai-postgres
+    environment:
+      POSTGRES_USER: predix_user
+      POSTGRES_PASSWORD: predix_secure_password
+      POSTGRES_DB: predixai
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  # Mosquitto MQTT Broker for Industrial Telemetry
+  mosquitto:
+    image: eclipse-mosquitto:2.0
+    container_name: predixai-mosquitto
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    restart: unless-stopped
+
+  # FastAPI Backend & ML Prognostics Engine
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    container_name: predixai-backend
+    environment:
+      - DATABASE_URL=postgresql://predix_user:predix_secure_password@postgres:5432/predixai
+      - MQTT_BROKER=mosquitto
+      - MQTT_PORT=1883
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+      - mosquitto
+    restart: unless-stopped
+
+  # React + Vite Industrial Dashboard
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    container_name: predixai-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

@@ -1,0 +1,47 @@
+{
+  "Random Forest": {
+    "mae": 11.48,
+    "rmse": 15.251,
+    "r2_score": 0.8653,
+    "nasa_total_score": 386.23,
+    "nasa_mean_penalty": 3.8623,
+    "late_predictions_pct": 43.0,
+    "early_predictions_pct": 57.0
+  },
+  "XGBoost": {
+    "mae": 10.739,
+    "rmse": 14.418,
+    "r2_score": 0.8796,
+    "nasa_total_score": 300.17,
+    "nasa_mean_penalty": 3.0017,
+    "late_predictions_pct": 49.0,
+    "early_predictions_pct": 51.0
+  },
+  "LightGBM": {
+    "mae": 11.285,
+    "rmse": 14.955,
+    "r2_score": 0.8705,
+    "nasa_total_score": 325.37,
+    "nasa_mean_penalty": 3.2537,
+    "late_predictions_pct": 50.0,
+    "early_predictions_pct": 50.0
+  },
+  "Kalman-LSTM (PyTorch)": {
+    "mae": 11.946,
+    "rmse": 16.319,
+    "r2_score": 0.8458,
+    "nasa_total_score": 382.87,
+    "nasa_mean_penalty": 3.8287,
+    "late_predictions_pct": 60.0,
+    "early_predictions_pct": 40.0
+  },
+  "XGBoost (Uncapped RUL)": {
+    "mae": 18.613,
+    "rmse": 26.031,
+    "r2_score": 0.6076,
+    "nasa_total_score": 6669.38,
+    "nasa_mean_penalty": 66.6938,
+    "late_predictions_pct": 36.0,
+    "early_predictions_pct": 64.0
+  }
+}
